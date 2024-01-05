@@ -1,107 +1,104 @@
-Poppy Humanoid
-===================
-[![PyPI](https://img.shields.io/pypi/v/poppy-humanoid.svg)](https://pypi.python.org/pypi/poppy-humanoid/)
-
-Poppy Humanoid is an open-source and 3D printed humanoid robot. Optimized for research and education purposes, its modularity allows for a wide range of applications and experimentations.
-
-
-![Trunk Assembled](doc/img/poppy-humanoid-github.jpg)
-
-### Open Source
-
-All the technological development work made in the Poppy project is freely available under open source licenses. Only the name usage *"Poppy"* is restricted and protected as an international trademark, please contact us if you want to use it or have more information.
-
-
-|   License     |     Hardware    |   Software      |
-| ------------- | :-------------: | :-------------: |
-| Title  | [Creatives Commons BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)  |[GPL v3](http://www.gnu.org/licenses/gpl.html)  |
-| Logo  | [![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) ](http://creativecommons.org/licenses/by-sa/4.0/)  |[![GPL V3](https://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)  |
-
-
-**Please keep references to the [Poppy project (www.poppy-project.org)](https://www.poppy-project.org/) and [authors](doc/authors.md) when you use or fork this work.**
-
-### Looking for the Solidworks files ?
-
-We are using a GitHub feature called GIT LFS. It is great for versionning solidworks files but it stills lack basic features. If you download directly solidworks files from this web page, you will get an empty file...
-
-You have two option:
-
-1. Download the last official Solidworks version in the [release](https://github.com/poppy-project/poppy-humanoid/releases). You will also find STL, STEP and parasolid files.
-- Clone locally this repository following [this guide](doc/en/cloning.md). This solution is only for people desiring to contribute or develop news hardware features for Poppy.
-
-## Build your own Poppy Humanoid
-
-Building a complete Poppy Humanoid costs $8000-9000 with about 60% for buying the 25 Robotis Dynamixel actuators required. The full BOM is available here >> [Bill Of Material](https://docs.poppy-project.org/en/assembly-guides/poppy-humanoid/bom.html).
-
-**The STL files are available in [the releases](https://github.com/poppy-project/poppy-humanoid/releases) of this repository.**
-
-Then the process to assemble a complete Poppy Humanoid takes about 7hrs for  handyman people.
-
-**For more informations, refer to the [assembly instructions](https://docs.poppy-project.org/en/assembly-guides/poppy-humanoid/)**.
-
-### Install poppy-humanoid
-#### Install a Poppy board
-Poppy Humanoid is made to work with a Raspberry Pi 3 or 4. We provide our own [system image](https://github.com/poppy-project/poppy-humanoid/releases) that can be directly copied to the SD-card or MMC. You can refer to the [documentation](http://docs.poppy-project.org/en/installation/burn-an-image-file.html) for more details. Note that if you buy it as a kit from one of the reseller you will also get a pre-installed SD-card.
-
-### Install the software tools locally
-
-You way also connect Poppy Huanoid's motors directly on your own computer with a USB2Dynamixel or USB2AX adapter instead of using the embedded Raspberry Pi 3/4 board. Just install software with pip: `pip install poppy-humanoid`.
-
-**For more informations, refer to the [poppy documentation](http://docs.poppy-project.org/en/installation/index.html)**.
-
-## Support
-You need support ?
-The [Poppy forum](https://forum.poppy-project.org) is the best (and single) place to ask for help.
-
-You can in particular check for the [Poppy Humanoid category](https://forum.poppy-project.org/c/poppy-creatures/humanoid).
-
-## Contribution
-
-If you are interrested by contribuing to the Poppy project, you can **take a look at [open issues](https://github.com/poppy-project/poppy-humanoid/issues) and [call for contributions](https://forum.poppy-project.org/tags/call-for-contributions)**.
-
-Morevover, the Poppy project involves a very large scope of disciplines:
- - Engineering fields such as computer science, mechanics, electronics, machine learning...
- - Humanities such as cognitive science, psychology...
- - Life science such as biology, biomechanics,...
- - Community management, scientific mediation, communication...
- - Design such as web design, object design, UX,...
- - Art with the need of animator to create [the illusion of life](http://en.wikipedia.org/wiki/Disney_Animation:_The_Illusion_of_Life) and emotions.
-
-So there are many ways to contribute to this project and you are very welcome to do it.
-
-Maybe the first step is to become a member of the community on the [poppy forum](https://forum.poppy-project.org).  The forum is the very central place to exchange with users and contributors. You can freely come and talk about your project or ideas with your prefered language.
-
-For github ninja, you can of course fork this repository and open pull requests to propose your changes, or create issues to notify a problem.
-
-## License
-
-All the technological development work made in the Poppy project is freely available under open source licenses. Only the name usage *"Poppy"* is restricted and protected as an international trademark, please contact us if you want to use it or have more information.
-
-
-|   License     |     Hardware    |   Software      |
-| ------------- | :-------------: | :-------------: |
-| Title  | [Creatives Commons BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)  |[GPL v3](http://www.gnu.org/licenses/gpl.html)  |
-| Logo  | [![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) ](http://creativecommons.org/licenses/by-sa/4.0/)  |[![GPL V3](https://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)  |
-
-
-**Please keep references to the [Poppy project (www.poppy-project.org)](https://www.poppy-project.org/) and [authors](doc/authors.md) when you use or fork this work.**
-
-
-## The Poppy project history
-
-The Poppy project is born in 2012 in the [Flowers laboratory](https://flowers.inria.fr/) at [Inria Bordeaux Sud-Ouest](http://www.inria.fr/en/centre/bordeaux).
-It was initiated during [Matthieu Lapeyre](https://github.com/matthieu-lapeyre)'s PhD Thesis surpervised by [Pierre Yves Oudeyer](http://www.pyoudeyer.com/). At the beginning, the development team was composed by [Matthieu Lapeyre](https://github.com/matthieu-lapeyre) (mechanics & design), [Pierre Rouanet](https://github.com/pierre-rouanet) (software) and [Jonathan Grizou](http://jgrizou.com/) (electronics).
-
-This project is initially a fundamental research project financed by [ERC Grant Explorer](http://erc.europa.eu/) to explore the role of embodiement and morphology properties on cognition and especially on the learning of sensori-motor tasks. It is now hosted by the [Poppy Station non-profit](https://www.poppy-station.org/en).
-
-
-### More on the project
-
-- [Website](https://www.poppy-project.org)
-- [Forum](https://forum.poppy-project.org)
-- [Twitter](https://twitter.com/poppy_project)
-- [Facebook](https://www.facebook.com/poppycommunity/)
-- [Flickr](https://www.flickr.com/photos/poppy-project)
-- [YouTube](https://www.youtube.com/channel/UC3iVGSr-vMgnFlIfPBH2p7Q)
-- [Vimeo](https://vimeo.com/poppyproject/videos)
-- [Thingiverse](http://www.thingiverse.com/poppy_project/)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><h1 tabindex="-1" dir="auto"><a id="user-content-poppy-humanoid" class="anchor" aria-hidden="true" tabindex="-1" href="#poppy-humanoid"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">罂粟人形</font></font></h1>
+<p dir="auto"><a href="https://pypi.python.org/pypi/poppy-humanoid/" rel="nofollow"><img src="https://camo.githubusercontent.com/f746fc0a92538f8e6da1f13d3ac4eac642a10a176a29303214d8f2ccfc371c79/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f706f7070792d68756d616e6f69642e737667" alt="皮伊" data-canonical-src="https://img.shields.io/pypi/v/poppy-humanoid.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy Humanoid 是一款开源 3D 打印人形机器人。</font><font style="vertical-align: inherit;">其模块化设计针对研究和教育目的进行了优化，可进行广泛的应用和实验。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/poppy-project/poppy-humanoid/blob/master/doc/img/poppy-humanoid-github.jpg"><img src="/poppy-project/poppy-humanoid/raw/master/doc/img/poppy-humanoid-github.jpg" alt="行李箱组装完毕" style="max-width: 100%;"></a></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-open-source" class="anchor" aria-hidden="true" tabindex="-1" href="#open-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy 项目中所做的所有技术开发工作都可以在开源许可下免费获得。</font><font style="vertical-align: inherit;">只有名称使用</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“Poppy”</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为国际商标受到限制和保护，如果您想使用它或了解更多信息，请与我们联系。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">硬件</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标题</font></font></td>
+<td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知识共享 BY-SA</font></font></a></td>
+<td align="center"><a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通用公共许可证 v3</font></font></a></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标识</font></font></td>
+<td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow"><img src="https://camo.githubusercontent.com/69e3e681f1cf6b155fc6148fc6d44d3fccc65dff25e654cba40733e10558bea9/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792d73612f342e302f38387833312e706e67" alt="知识共享 BY-SA" data-canonical-src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="max-width: 100%;"> </a></td>
+<td align="center"><a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow"><img src="https://camo.githubusercontent.com/b5af0f026487d402c8f34cb9ebbef2362b52769223ab998d85e393f04c310c1a/68747470733a2f2f7777772e676e752e6f72672f67726170686963732f67706c76332d38387833312e706e67" alt="通用公共许可证V3" data-canonical-src="https://www.gnu.org/graphics/gplv3-88x31.png" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您使用或分叉此作品时，</font><font style="vertical-align: inherit;">请保留对</font></font><a href="https://www.poppy-project.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy 项目 (www.poppy-project.org)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="/poppy-project/poppy-humanoid/blob/master/doc/authors.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者的引用。</font></font></a><font style="vertical-align: inherit;"></font></strong></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-looking-for-the-solidworks-files-" class="anchor" aria-hidden="true" tabindex="-1" href="#looking-for-the-solidworks-files-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正在寻找 Solidworks 文件？</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们正在使用名为 GIT LFS 的 GitHub 功能。</font><font style="vertical-align: inherit;">它非常适合对 SolidWorks 文件进行版本控制，但仍然缺乏基本功能。</font><font style="vertical-align: inherit;">如果您直接从此网页下载solidworks文件，您将得到一个空文件...</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您有两个选择：</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载该</font></font><a href="https://github.com/poppy-project/poppy-humanoid/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中的最新 Solidworks 官方版本。</font><font style="vertical-align: inherit;">您还可以找到 STL、STEP 和 parasolid 文件。</font></font></li>
+</ol>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="/poppy-project/poppy-humanoid/blob/master/doc/en/cloning.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按照本指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在本地克隆此存储库</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">该解决方案仅适用于希望为 Poppy 贡献或开发新闻硬件功能的人。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-build-your-own-poppy-humanoid" class="anchor" aria-hidden="true" tabindex="-1" href="#build-your-own-poppy-humanoid"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打造你自己的罂粟人形机器人</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建一个完整的 Poppy 人形机器人的成本为 8000-9000 美元，其中大约 60% 用于购买所需的 25 个 Robotis Dynamixel 执行器。</font><font style="vertical-align: inherit;">完整的 BOM 可在此处查看 &gt;&gt;</font></font><a href="https://docs.poppy-project.org/en/assembly-guides/poppy-humanoid/bom.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物料清单</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">STL 文件在此存储库的</font></font><a href="https://github.com/poppy-project/poppy-humanoid/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版本</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中可用。</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于勤杂工来说，组装一个完整的罂粟人形机器人大约需要 7 个小时。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多信息，请参阅</font></font><a href="https://docs.poppy-project.org/en/assembly-guides/poppy-humanoid/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组装说明</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-install-poppy-humanoid" class="anchor" aria-hidden="true" tabindex="-1" href="#install-poppy-humanoid"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装罂粟人形机器人</font></font></h3>
+<h4 tabindex="-1" dir="auto"><a id="user-content-install-a-poppy-board" class="anchor" aria-hidden="true" tabindex="-1" href="#install-a-poppy-board"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 Poppy 板</font></font></h4>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy Humanoid 适合与 Raspberry Pi 3 或 4 配合使用。我们提供自己的</font></font><a href="https://github.com/poppy-project/poppy-humanoid/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系统映像</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，可以直接复制到 SD 卡或 MMC。</font><font style="vertical-align: inherit;">您可以参考</font></font><a href="http://docs.poppy-project.org/en/installation/burn-an-image-file.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解更多详细信息。</font><font style="vertical-align: inherit;">请注意，如果您从经销商处将其作为套件购买，您还将获得一张预装的 SD 卡。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-install-the-software-tools-locally" class="anchor" aria-hidden="true" tabindex="-1" href="#install-the-software-tools-locally"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地安装软件工具</font></font></h3>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以使用 USB2Dynamixel 或 USB2AX 适配器将 Poppy Huanoid 的电机直接连接到您自己的计算机上，而不是使用嵌入式 Raspberry Pi 3/4 板。</font><font style="vertical-align: inherit;">只需使用 pip: 安装软件即可</font></font><code>pip install poppy-humanoid</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多信息，请参阅</font></font><a href="http://docs.poppy-project.org/en/installation/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">poppy 文档</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-support" class="anchor" aria-hidden="true" tabindex="-1" href="#support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你需要支持吗？</font><font style="vertical-align: inherit;">Poppy</font></font><a href="https://forum.poppy-project.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是寻求帮助的最佳（也是唯一）场所。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以特别检查</font></font><a href="https://forum.poppy-project.org/c/poppy-creatures/humanoid" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy Humanoid 类别</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contribution" class="anchor" aria-hidden="true" tabindex="-1" href="#contribution"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您有兴趣为 Poppy 项目做出贡献，您可以</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font><a href="https://github.com/poppy-project/poppy-humanoid/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未解决的问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并</font></font><a href="https://forum.poppy-project.org/tags/call-for-contributions" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">呼吁贡献</font></font></a></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此外，Poppy 项目涉及非常广泛的学科：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">计算机科学、机械、电子、机器学习等工程领域......</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">人文学科，如认知科学、心理学……</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生命科学，例如生物学、生物力学...</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区管理、科学调解、沟通……</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计，例如网页设计、对象设计、用户体验……</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艺术需要动画师来创造</font></font><a href="http://en.wikipedia.org/wiki/Disney_Animation:_The_Illusion_of_Life" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生命和情感的幻象</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因此，有很多方法可以为这个项目做出贡献，非常欢迎您这样做。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">也许第一步是成为罂粟</font></font><a href="https://forum.poppy-project.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区的成员。</font><font style="vertical-align: inherit;">论坛是与用户和贡献者交流的中心场所。</font><font style="vertical-align: inherit;">您可以自由地用您喜欢的语言谈论您的项目或想法。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于 github ninja，您当然可以分叉此存储库并打开拉取请求来提出更改，或创建问题来通知问题。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" tabindex="-1" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy 项目中所做的所有技术开发工作都可以在开源许可下免费获得。</font><font style="vertical-align: inherit;">只有名称使用</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“Poppy”</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为国际商标受到限制和保护，如果您想使用它或了解更多信息，请与我们联系。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">硬件</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标题</font></font></td>
+<td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知识共享 BY-SA</font></font></a></td>
+<td align="center"><a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通用公共许可证 v3</font></font></a></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标识</font></font></td>
+<td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow"><img src="https://camo.githubusercontent.com/69e3e681f1cf6b155fc6148fc6d44d3fccc65dff25e654cba40733e10558bea9/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792d73612f342e302f38387833312e706e67" alt="知识共享 BY-SA" data-canonical-src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" style="max-width: 100%;"> </a></td>
+<td align="center"><a href="http://www.gnu.org/licenses/gpl.html" rel="nofollow"><img src="https://camo.githubusercontent.com/b5af0f026487d402c8f34cb9ebbef2362b52769223ab998d85e393f04c310c1a/68747470733a2f2f7777772e676e752e6f72672f67726170686963732f67706c76332d38387833312e706e67" alt="通用公共许可证V3" data-canonical-src="https://www.gnu.org/graphics/gplv3-88x31.png" style="max-width: 100%;"></a></td>
+</tr>
+</tbody>
+</table>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您使用或分叉此作品时，</font><font style="vertical-align: inherit;">请保留对</font></font><a href="https://www.poppy-project.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy 项目 (www.poppy-project.org)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="/poppy-project/poppy-humanoid/blob/master/doc/authors.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者的引用。</font></font></a><font style="vertical-align: inherit;"></font></strong></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-the-poppy-project-history" class="anchor" aria-hidden="true" tabindex="-1" href="#the-poppy-project-history"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy 项目历史</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Poppy 项目于 2012 年诞生于</font><a href="http://www.inria.fr/en/centre/bordeaux" rel="nofollow"><font style="vertical-align: inherit;">Inria Bordeaux Sud-Ouest</font></a><font style="vertical-align: inherit;">的</font></font><a href="https://flowers.inria.fr/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Flowers 实验室</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">它是在</font><a href="http://www.pyoudeyer.com/" rel="nofollow"><font style="vertical-align: inherit;">Pierre Yves Oudeyer指导下的</font></a><a href="https://github.com/matthieu-lapeyre"><font style="vertical-align: inherit;">Matthieu Lapeyre</font></a><font style="vertical-align: inherit;">博士论文期间发起的</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">最初，开发团队由</font><a href="https://github.com/matthieu-lapeyre"><font style="vertical-align: inherit;">Matthieu Lapeyre</font></a><font style="vertical-align: inherit;">（机械和设计）、</font><a href="https://github.com/pierre-rouanet"><font style="vertical-align: inherit;">Pierre Rouanet</font></a><font style="vertical-align: inherit;">（软件）和</font><a href="http://jgrizou.com/" rel="nofollow"><font style="vertical-align: inherit;">Jonathan Grizou</font></a><font style="vertical-align: inherit;">（电子）组成。</font></font><a href="http://www.inria.fr/en/centre/bordeaux" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/matthieu-lapeyre"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="http://www.pyoudeyer.com/" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/matthieu-lapeyre"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/pierre-rouanet"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="http://jgrizou.com/" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="http://erc.europa.eu/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目最初是由ERC Grant Explorer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资助的一个基础研究项目，</font><font style="vertical-align: inherit;">旨在探索具身和形态特性对认知，特别是感觉运动任务学习的作用。</font><font style="vertical-align: inherit;">它现在由</font></font><a href="https://www.poppy-station.org/en" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非盈利组织 Poppy Station</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主办。</font></font></p>
+<h3 tabindex="-1" dir="auto"><a id="user-content-more-on-the-project" class="anchor" aria-hidden="true" tabindex="-1" href="#more-on-the-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关该项目的更多信息</font></font></h3>
+<ul dir="auto">
+<li><a href="https://www.poppy-project.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站</font></font></a></li>
+<li><a href="https://forum.poppy-project.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a></li>
+<li><a href="https://twitter.com/poppy_project" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特</font></font></a></li>
+<li><a href="https://www.facebook.com/poppycommunity/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook</font></font></a></li>
+<li><a href="https://www.flickr.com/photos/poppy-project" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">弗利克</font></font></a></li>
+<li><a href="https://www.youtube.com/channel/UC3iVGSr-vMgnFlIfPBH2p7Q" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube</font></font></a></li>
+<li><a href="https://vimeo.com/poppyproject/videos" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维梅奥</font></font></a></li>
+<li><a href="http://www.thingiverse.com/poppy_project/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">事物宇宙</font></font></a></li>
+</ul>
+</article></div>
